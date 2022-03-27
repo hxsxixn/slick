@@ -1,0 +1,166 @@
+@import "./config/_variables.scss";
+
+* {
+    // border: solid 1px black;
+    position: relative;
+    }
+
+html,body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+    z-index: 1;
+}
+.container-fluid {
+    padding: 0;
+}
+
+img.logo{
+    width: 250px;
+    height: 100px;
+    margin: 30px 0px;
+}
+
+.menu.row.row-cols-5{
+    width: 100%;
+    background-color: #ccc;
+    .menu_li{
+        padding:10px 0px;
+        cursor: pointer;
+        &:hover{
+            background-color: #333;
+            color: #fff;
+            ul.m_sub{
+                visibility: visible;
+            }
+        }
+    }
+    // ul{
+    //     color: $main_color;
+    //     margin: 0;
+    //     padding: 10px 0px;
+    // }
+}
+
+.set_box{
+    margin: 30px;
+    margin-right: 50px;
+    .sel_lan{
+        padding: 0px 40px 7px 7px;
+        cursor: pointer;
+        display: inline-block;
+        .lan_box{
+            width: 100px;
+            position: absolute;
+            right: 60px;
+            z-index: 10;
+            background-color: #555;
+            color: #ccc;
+            display: none;
+            ul{
+                margin: 0px;
+            }
+            li:hover{
+                color: $main_color;
+                background-color: #fff;;
+            }
+        } 
+        &:after{
+            display: inline-block;
+            content:"";
+            border-left: solid 1px #ccc;
+            height: 12px;
+            margin-left: 20px;
+        }
+    }
+    .sel_area{
+        cursor: pointer;
+        .area_box{
+            background-color: #555;
+            position: absolute;
+            right: 0px;
+            z-index: 10;
+            display: none;
+            ul{
+                height: 200px;
+                display: flex;
+                flex-direction: row;
+                writing-mode: vertical-lr;
+                flex-wrap: wrap;
+                margin: 0px;
+
+            }
+            li{
+                width: 80px;
+                color: #ccc;
+                writing-mode: horizontal-tb;
+                text-align: center;
+                &:hover{
+                    background-color: #fff;
+                    color: $main_color;
+                }
+            }
+        }
+    }
+
+}
+
+.search.input-group.mb-3{
+    // padding-right: 100px;     //搜尋視窗往左偏移
+    input{
+        width: 200px;
+        height: 50px;
+        &::placeholder{
+            color: #ccc;
+        }
+    }
+    span{
+        border-color: $main_color;
+        background-color: $main_color;
+    }
+}
+
+ul.m_sub{
+    background-color: #555;
+    position: absolute;
+    visibility: hidden;
+    padding: 0px;
+    li{
+        padding: 10px 30px;
+        &:hover{
+            background-color: #fff;
+            color: $main_color;
+        }
+    }
+}
+
+button.slick-prev.slick-arrow{
+    background-color: #ccc;
+    width: 50px;
+    position: absolute;
+    top: 200px;
+    z-index: 10;
+}
+
+.mm{
+    position: absolute;
+    margin-top: -200px;
+    z-index: 10;
+    li{
+        display: inline-block;
+        margin: 0px 10px;
+    }
+}
+.slick-active{
+    button{
+        width: 30px;
+        height: 30px;
+        background-color: green;
+        border-radius: 100%;
+
+    }
+}

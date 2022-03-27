@@ -1,0 +1,194 @@
+* {
+  position: relative;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  z-index: 1;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+img.logo {
+  width: 250px;
+  height: 100px;
+  margin: 30px 0px;
+}
+
+.menu.row.row-cols-5 {
+  width: 100%;
+  background-color: #ccc;
+}
+
+.menu.row.row-cols-5 .menu_li {
+  padding: 10px 0px;
+  cursor: pointer;
+}
+
+.menu.row.row-cols-5 .menu_li:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.menu.row.row-cols-5 .menu_li:hover ul.m_sub {
+  visibility: visible;
+}
+
+.set_box {
+  margin: 30px;
+  margin-right: 50px;
+}
+
+.set_box .sel_lan {
+  padding: 0px 40px 7px 7px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.set_box .sel_lan .lan_box {
+  width: 100px;
+  position: absolute;
+  right: 60px;
+  z-index: 10;
+  background-color: #555;
+  color: #ccc;
+  display: none;
+}
+
+.set_box .sel_lan .lan_box ul {
+  margin: 0px;
+}
+
+.set_box .sel_lan .lan_box li:hover {
+  color: #00B55E;
+  background-color: #fff;
+}
+
+.set_box .sel_lan:after {
+  display: inline-block;
+  content: "";
+  border-left: solid 1px #ccc;
+  height: 12px;
+  margin-left: 20px;
+}
+
+.set_box .sel_area {
+  cursor: pointer;
+}
+
+.set_box .sel_area .area_box {
+  background-color: #555;
+  position: absolute;
+  right: 0px;
+  z-index: 10;
+  display: none;
+}
+
+.set_box .sel_area .area_box ul {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0px;
+}
+
+.set_box .sel_area .area_box li {
+  width: 80px;
+  color: #ccc;
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb;
+  text-align: center;
+}
+
+.set_box .sel_area .area_box li:hover {
+  background-color: #fff;
+  color: #00B55E;
+}
+
+.search.input-group.mb-3 input {
+  width: 200px;
+  height: 50px;
+}
+
+.search.input-group.mb-3 input::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+.search.input-group.mb-3 input:-ms-input-placeholder {
+  color: #ccc;
+}
+
+.search.input-group.mb-3 input::-ms-input-placeholder {
+  color: #ccc;
+}
+
+.search.input-group.mb-3 input::placeholder {
+  color: #ccc;
+}
+
+.search.input-group.mb-3 span {
+  border-color: #00B55E;
+  background-color: #00B55E;
+}
+
+ul.m_sub {
+  background-color: #555;
+  position: absolute;
+  visibility: hidden;
+  padding: 0px;
+}
+
+ul.m_sub li {
+  padding: 10px 30px;
+}
+
+ul.m_sub li:hover {
+  background-color: #fff;
+  color: #00B55E;
+}
+
+button.slick-prev.slick-arrow {
+  background-color: #ccc;
+  width: 50px;
+  position: absolute;
+  top: 200px;
+  z-index: 10;
+}
+
+.mm {
+  position: absolute;
+  margin-top: -200px;
+  z-index: 10;
+}
+
+.mm li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+.slick-active button {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  border-radius: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
